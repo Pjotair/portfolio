@@ -11,10 +11,10 @@ IoT projects I'm involved in my work:
 - **DuraSense** - IoT project for monitoring the operation of logistics hubs
 
 Web site projects in which I tested the Front End:
-- [BLIK](https://blik.com/en:target="blank"){:target="_blank"}
-- [ERBUD](https://www.erbud.pl/en){:target="_blank"}
-- [Moraj](https://company.moraj.pl/en){:target="_blank"}
-- [Famak](https://www.famak.pl/en){:target="_blank"}
+- [BLIK](https://blik.com/en)
+- [ERBUD](https://www.erbud.pl/en)
+- [Moraj](https://company.moraj.pl/en)
+- [Famak](https://www.famak.pl/en)
 
 
 Some of my simple solutions - sometimes useful :P
