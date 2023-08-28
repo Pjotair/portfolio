@@ -16,8 +16,9 @@ Web site projects in which I tested the Front End:
 - <a href="https://company.moraj.pl/en" target="_blank">Moraj</a>
 - <a href="https://www.famak.pl/en" target="_blank">Famak</a>
 
+📫 You can contact me through LinkedIn <a href="https://www.linkedin.com/in/piotrdolecki/" target="_blank">linkedin.com/in/piotrdolecki/</a>
 
-Some of my simple solutions - sometimes useful :P
+Some of my simple solutions - sometimes useful 😄
 ------
 
 - **[API_test_engine](https://github.com/Pjotair/portfolio/tree/main/API_test_engine)** Test engine to validate the defined status code and response template
