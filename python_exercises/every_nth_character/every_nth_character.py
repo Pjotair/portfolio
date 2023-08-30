@@ -1,8 +1,3 @@
-"""
-Create a script that accepts text from user i and then displays every nth character (user's choice) from that text,
-let user choose if spaces should be removed (yes/no)
-"""
-
 import argparse
 from helpers import Checkers
 
@@ -18,7 +13,8 @@ args = parser.parse_args()
 print("Hello! \nThis is a program that will accept text from the user and then display every nth character \
       \n(you can choose which one) from that text, you can also make \
       \na choice whether to remove spaces from the text beforehand (yes/no). \
-      \nFor more help use the `every_nth_character.py -h` command.")
+      \nFor more help use the `every_nth_character.py -h` command. \
+      \nTo abort the program earlier use ctrl + c\n")
 
 NTH = int(args.nth_element)
 SPACE = True if str(args.remove_space) == "yes" else False
