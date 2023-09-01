@@ -1,4 +1,4 @@
-from pages.home_page.home_page import HomePage
+from pages.home_page import HomePage
 
 
 def test_page_header(driver, test_data):
