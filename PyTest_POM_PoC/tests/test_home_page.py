@@ -11,4 +11,3 @@ def test_page_header(driver, test_data):
 
     assert page_header == expected_page_header, \
         f'Page header should be {expected_page_header}, and is {page_header}'
-    
