@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, Locator } from "@playwright/test";
 import { HomePage } from "../pages/home-page/home-page";
 
 import testParameters from "./data-for-test.json";
@@ -24,5 +24,17 @@ test.describe("Home Page Tests", () => {
     const homePageHeader: string = await homePage.pageTitle.innerText();
     const expectedPageHeader: string = TEST_PARAMETERS.pageTitle;
     expect(homePageHeader).toEqual(expectedPageHeader);
+  });
+
+  test("Home Page - Check [Get Started] Button", async ({context}) => {
+    /*
+    The user sees the page header
+    Given: the user has access to the page
+    When: open the home page
+    Then: the page contains the header
+    */
+    const getStartedButton: Locator = homePage.getStartedButton
+    await expect(getStartedButton).toBeVisible()
+    await expect(getStartedButton).toBeEnabled()
   });
 });
