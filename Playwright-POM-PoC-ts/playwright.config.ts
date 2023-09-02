@@ -12,7 +12,7 @@ dotenv.config({ path: path.resolve(__dirname, ".env"), override: true });
  */
 const config: PlaywrightTestConfig = {
   testDir: "./tests",
-  globalSetup: "./utils/global-setup.e2e.ts",
+  globalSetup: "./utils/global-setup.ts",
   snapshotDir: "./snapshots",
   /* Maximum time one test can run for. */
   timeout: 120 * 1000,
