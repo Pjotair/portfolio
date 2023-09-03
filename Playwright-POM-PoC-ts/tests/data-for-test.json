@@ -1,0 +1,13 @@
+{
+  "home": {
+    "pageTitle": "Playwright enables reliable end-to-end testing for modern web apps."
+  },
+  "docs": {
+    "url": "/docs/intro"
+  },
+  "styles": {
+    "button": {
+      "hoverColor": "rgb(69, 186, 75)"
+    }
+  }
+}
