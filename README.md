@@ -21,6 +21,7 @@ Web site projects in which I tested the Front End:
 Some of my simple solutions - sometimes useful 😄
 ------
 
-- **[API_test_engine](https://github.com/Pjotair/portfolio/tree/main/API_test_engine)** Test engine to validate the defined status code and response template
-- **[Postman_result_TestRail](https://github.com/Pjotair/portfolio/tree/main/Postman_result_TestRail)** Code to automatically report the results of tests performed in Postman to TestRail
-- **[python_exercises](https://github.com/Pjotair/portfolio/tree/main/python_exercises)** -> Here I post solutions to various problems using Python
+- **[API_test_engine](https://github.com/Pjotair/portfolio/tree/main/API_test_engine)** Test engine to validate the defined status code and response template (Python)
+- **[Playwright-POM-PoC-ts](https://github.com/Pjotair/portfolio/tree/main/Playwright-POM-PoC-ts)** Proof of concept UI tests using Playwright in the Page Object Model structure (TypeScript)
+- **[Postman_result_TestRail](https://github.com/Pjotair/portfolio/tree/main/Postman_result_TestRail)** Code to automatically report the results of tests performed in Postman to TestRail (JavaScript)
+- **[python_exercises](https://github.com/Pjotair/portfolio/tree/main/python_exercises)** -> Here I post solutions to various problems using Python (Python)

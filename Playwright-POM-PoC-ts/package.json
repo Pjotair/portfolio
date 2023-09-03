@@ -1,0 +1,16 @@
+{
+  "name": "Playwright-POM-PoC-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests": "playwright test tests/ --config=playwright.config.ts --project=Chromium --reporter=list"
+  },
+  "keywords": [],
+  "author": "Piotr Dolecki",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.37.1",
+    "dotenv": "^16.0.3"
+  }
+}
