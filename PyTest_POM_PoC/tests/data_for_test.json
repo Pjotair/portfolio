@@ -1,6 +1,6 @@
 {
-    "base_url": "https://docs.pytest.org/en/7.4.x/",
+    "base_url": "https://fakestore.testelka.pl/",
     "home": {
-        "page_header": "pytest: helps you write better programs"
+        "page_header": "Wybierz podróż dla siebie!"
     }
 }
