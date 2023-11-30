@@ -1,8 +1,8 @@
 Portfolio
 ========
-Me
+about me
 --
-I am performing the duties of Quality Engineer in the cross-functional US Engineering Team and I participating in IoT projects. I perform End to End, UI and API automatic tests and create test documentation.
+I am a versatile Quality Assurance Professional skilled in both Automation and Manual Testing, demonstrating a track record of ensuring precision and efficiency in software testing processes.
 
 I use *Python* and *TypeScript* to create automated tests, as well as <a href="https://docs.pytest.org/en/7.4.x/" target="_blank">PyTest</a>, <a href="https://playwright.dev/" target="_blank">Playwright</a>, <a href="https://www.postman.com/" target="_blank">Postman</a> tools. For documentation and work management <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a>, <a href="https://www.atlassian.com/software/confluence" target="_blank">Confluence</a> and <a href="https://www.testrail.com/" target="_blank">TestRail</a>.
 
