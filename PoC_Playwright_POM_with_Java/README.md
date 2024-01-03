@@ -1,2 +1,3 @@
-## PoC Playwright POM with Java
+## Proof of concept for Playwright with Java
 
+work in progress...
