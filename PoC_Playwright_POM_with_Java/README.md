@@ -11,7 +11,7 @@ Playwright is a web browser automation tool.
 - [Author](#author)
 
 ## Requirements
-1. Java 8 lub nowsza
+1. Java 8 or later
 2. Maven
 
 ## Project configuration

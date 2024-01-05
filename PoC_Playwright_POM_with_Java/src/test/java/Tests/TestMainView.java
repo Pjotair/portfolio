@@ -88,7 +88,7 @@ public class TestMainView {
     void checkSearch() {
         /*
         The user can search for products
-        Given: the user has access to the page
+        Given: There are products in the store
         When: Provides the search phrase
         Then: the page displays the search results
         */
@@ -100,7 +100,7 @@ public class TestMainView {
 
         ElementHandle[] elements = page.querySelectorAll(FIND_ELEMENTS).toArray(new ElementHandle[0]);
         page.waitForTimeout(500);
-        if (elements.length > 0) {
+        if (0 < elements.length) {
             for (ElementHandle element : elements) {
                 String currentText = element.innerText();
                 String lowerText = currentText.toLowerCase();
