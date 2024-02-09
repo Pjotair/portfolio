@@ -1,7 +1,10 @@
-from pages.home_page import HomePage
+from PyTest_POM_PoC.pages.home_page import HomePage
 
 
 def test_page_header(driver, test_data):
+    """
+    :param driver:
+    """
     home_page = HomePage(driver)
     url = test_data["base_url"]
     driver.get(url)

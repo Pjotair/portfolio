@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from .base_page import BasePage
 
+
 class HomePage(BasePage):
     HEADER = (By.CSS_SELECTOR, '[class="entry-header"] h1')
 
