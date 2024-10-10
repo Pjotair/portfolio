@@ -10,15 +10,10 @@ E.g.
 | [x] Three is Title| C003333  | C333000  |
 
 To run go in terminal to the path with this file:
-e.g.
-```zsh
-cd test_title_reader
-```
+e.g. cd test_title_reader
 
-then run
-```zsh
-python3 test_title_reader.py ../tests --output output_data
-```
+then run use
+'python3 test_title_reader.py ../tests --output output_data'
 
 Where:
 `python3` indicates that execution will occur using python
@@ -27,9 +22,7 @@ Where:
 `--output file_name` is an optional argument in which you can specify the name of the file if it is not named “output.csv”
 
 You can also get directions in the terminal assuming you are in the directory with the
-```zsh
 python3 test_title_reader.py -h
-```
 """
 
 import os
@@ -42,7 +35,7 @@ GREEN = "\033[92m"
 RED = "\033[91m"
 
 
-def extract_data_from_ts_file(file_path):
+def extract_data_from_ts_file(file_path: str) -> list[list[str]]:
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
 
@@ -64,7 +57,7 @@ def extract_data_from_ts_file(file_path):
         return results
 
 
-def process_ts_files_in_directory(directory):
+def process_ts_files_in_directory(directory: str) -> list[list[str]]:
     all_data = []
 
     for root, _, files in os.walk(directory):
@@ -76,7 +69,7 @@ def process_ts_files_in_directory(directory):
     return all_data
 
 
-def save_to_csv(data, csv_file):
+def save_to_csv(data: list[list[str]], csv_file: str):
     if not data:
         print(RED + "No data to write." + RESET)
         return
@@ -84,20 +77,23 @@ def save_to_csv(data, csv_file):
     max_tc_columns = max([len(row) - 1 for row in data])
     headers = ['TC-title'] + [f'TC-id-{i + 1}' for i in range(max_tc_columns)]
 
-    with open(csv_file, 'w', newline='', encoding='utf-8') as file:
+    output_directory = "output-data"
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+    csv_file_path = os.path.join(output_directory, csv_file)
+
+    with open(csv_file_path, 'w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(headers)
         for row in data:
             writer.writerow(row + [''] * (max_tc_columns - len(row) + 1))
-
     print(GREEN + f"The data was saved to a file: {csv_file}" + RESET)
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Extract scenarios and TC-ids from .ts files.')
+    parser = argparse.ArgumentParser(description='Extract the title of scenarios and TC-ids from .ts files.')
     parser.add_argument('directory', type=str, help='The directory to search for .ts files.')
     parser.add_argument('--output', type=str, default='output.csv', help='Output CSV file name (default: output.csv)')
-
     args = parser.parse_args()
 
     if not args.output.endswith('.csv'):
